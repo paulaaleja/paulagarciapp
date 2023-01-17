@@ -1,13 +1,12 @@
-import React from "react";
 import { Platform, TouchableOpacity } from "react-native";
+
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
-
+import MapScreen from "../screens/MapScreen";
+import NewPlaceScreen from "../screens/NewPlaceScreen";
 import PlaceDetailScreen from "../screens/PlaceDetailScreen";
 import PlaceListScreen from "../screens/PlaceListScreen";
-import NewPlaceScreen from "../screens/NewPlaceScreen";
-import MapScreen from "../screens/MapScreen";
+import React from "react";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const PlaceStack = createNativeStackNavigator();
 
@@ -19,10 +18,10 @@ const PlaceNavigator = () => {
         screenOptions={{
           headerStyle: {
             backgroundColor:
-              Platform.OS === "android" ? "#" : "#74D1CC",
+              Platform.OS === "android" ? "#" : "#42d1ed",
           },
           headerTintColor:
-            Platform.OS === "android" ? "white" : "#74D1CC",
+            Platform.OS === "android" ? "white" : "#42d1ed",
           headerTitleStyle: {
             fontWeight: "bold",
           },
@@ -38,7 +37,7 @@ const PlaceNavigator = () => {
                 <Ionicons
                   name="md-add"
                   color={
-                    Platform.OS === "android" ? "white" : "#74D1CC"
+                    Platform.OS === "android" ? "white" : "#42d1ed"
                   }
                   size={23}
                 />
